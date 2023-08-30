@@ -1,0 +1,57 @@
+.list{
+    margin: 0px;
+    /* border: 2px solid black; */
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+.bookssection{
+    margin: 0px;
+    padding: 0px;
+  
+}
+ul{
+    margin: 10px;
+    list-style: none;
+    padding: 0;
+    border: 2px solid black;
+}
+li{
+    list-style: none;
+    margin-left: 0px;
+}
+.minorList{
+    margin: 0;
+    
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px; 
+    
+    
+
+}
+.removed{
+    margin-left: auto;
+    
+}
+#main{
+    
+    position: center;
+    text-align: center;
+}
+#addingSection{
+    width: 100%;
+    position: center;
+    text-align: center;
+}
+
+
+.A{
+    padding: 10px;
+    margin: 3px;
+}
