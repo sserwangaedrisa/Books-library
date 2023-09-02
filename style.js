@@ -13,7 +13,9 @@ add.addEventListener("click", function (event) {
       this.author = author;
     }
     updateBooksArray() {
-      BooksArray.push(this);
+      if (this.title.length !== 0) {
+        BooksArray.push(this);
+      }
     }
   }
   class Child extends NewBook {
@@ -24,7 +26,7 @@ add.addEventListener("click", function (event) {
     }
 
     newBookItem() {
-      if (Title.length !== 0) {
+      if (this.title.length !== 0) {
         const newList = document.createElement("div");
         const newTitle = document.createElement("div");
         const newAuthor = document.createElement("div");
