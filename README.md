@@ -1,13 +1,14 @@
 # Book-Libraary 
 
 This project is a simple book store website built using HTML, CSS, and JavaScript. Users can store their books on this site by adding the title and author using a prompt. The website utilizes the local storage of the user's PC for persistent control of the books.
+https://sserwangaedrisa.github.io/Books-library/
 
 ## Features
 
 - Add a book: Users can add a book by providing the title and author through a prompt.
 - Local Storage: Utilizes the browser's local storage to persistently store the user's books.
 - User-Friendly Interface: Simple and easy-to-use interface for a seamless experience.
-
+- Access this deployed project here https://sserwangaedrisa.github.io/Books-library/
 ## Technologies Used
 
 - HTML: Provides the structure and content of the website.
