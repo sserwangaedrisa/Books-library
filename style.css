@@ -1,16 +1,39 @@
 body {
   padding-top: 2px;
+  width: 100%;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #8c9e9d, #e9e9ec);
 }
 
 #navSection {
   margin-right: 0;
   padding-right: 0;
-  position: fixed;
+
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: lightgray;
+  box-shadow: 2px 4px 3px;
+  background-color: rgb(77, 101, 77);
+  position: relative;
 }
+
+@media (max-width: 768px) {
+  #navSection {
+    position: static;
+  }
+
+  .navItems {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navItems li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
 .navItems {
   padding: 5px;
   width: 100%;
@@ -29,8 +52,8 @@ body {
 #item1 {
   margin-right: auto;
   padding-left: 4px;
-  font-size: x-large;
-  font-weight: 700;
+  font-size: xx-large;
+  font-weight: 900;
 }
 
 .item {
@@ -45,64 +68,61 @@ body {
 #item2 {
   border-right: 1px solid black;
 }
+#item2,
+#item1,
+#item3 {
+  font-style: italic;
+}
 
 .time {
   width: 100%;
   padding: 7px;
   padding-top: 2px;
+  height: 20px;
   padding-bottom: 0;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 #h1 {
   text-align: center;
+  text-decoration: underline;
 }
-
 #list-section {
   margin-top: 150px;
-  scroll-margin-top: 150px;
 }
-
-.list {
-  margin: 0;
-
-  /* border: 2px solid black; */
-  border-left: 0;
-  border-right: 0;
-}
-
-.bookssection {
-  margin: 0;
-  padding: 0;
-}
-
-#ul {
-  margin: 15px;
-  list-style: none;
-  padding: 0;
+#Books-section {
   border: 2px solid black;
   border-radius: 5px;
+  margin: 5%;
 }
+.newRow {
+  border: 0.5px solid black;
 
-li {
-  list-style: none;
-  margin-left: 0;
-}
-
-.minorList {
-  padding-top: 0;
-  border-bottom: 1px solid black;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 20px;
+  justify-content: space-between;
 }
 
-.removed {
-  margin-left: auto;
+.newBook {
+  margin-left: 12px;
+  margin-top: 7px;
+  font-size: larger;
 }
-
+.Remove {
+  margin: 7px;
+  border-radius: 5px;
+  font-size: larger;
+  width: 80px;
+}
+@media (max-width: 400px) {
+  .Remove {
+    content: X; /* Change the content to 'X' */
+  }
+}
+.evenBook {
+  background-color: rgb(154, 197, 197);
+}
 #main {
   text-align: center;
 }
@@ -111,10 +131,15 @@ li {
   width: 100%;
   text-align: center;
 }
-
+#Title,
+#Author,
+#AddButton {
+  border-radius: 4px;
+}
 .A {
   padding: 10px;
   margin: 3px;
+  border-radius: 4px;
 }
 
 .hrl {
@@ -131,9 +156,6 @@ li {
 .contactSection {
   margin-top: 40px;
   width: 100%;
-
-  /* display: flex;
-    justify-content: center; */
 }
 
 .cs {
